@@ -7,19 +7,7 @@
 
 import SwiftUI
 
-struct Task: Identifiable {
-    let id = UUID()
-    let title: String
-    var isCompleted: Bool
-}
-
 struct ContentView: View {
-    @State private var task: [Task] = [
-        Task(title: "Buy groceries", isCompleted: false),
-        Task(title: "Walk the dog", isCompleted: true)
-    ]
-
-    @State private var newTaskTitle: String = ""
 
     var body: some View {
         NavigationView {
